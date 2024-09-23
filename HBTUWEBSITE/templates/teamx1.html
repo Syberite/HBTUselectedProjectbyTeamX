@@ -1,0 +1,306 @@
+{% extends "base.html" %}
+{% block body %}
+    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="stylex.css">
+    <title> Sign up</title>
+    <style>
+        :root {
+            font-size: 100%;
+            font-size: 16px;
+            line-height: 1.5;
+            --primary-blue: #233975;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'montserrat', sans-serif ;
+            font-weight: 500;
+            font-family: "Poppins";
+        }
+        
+        h1 {
+            font-size: 2.25rem;
+            font-weight:700;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary-blue);
+        }
+        
+        a:hover {
+            text-decoration: solid;
+            text-decoration: underline;
+        }
+        
+        .small {
+            font-size: 80%;
+            text-align: center;
+        }
+        
+        .split-screen {
+            display: flex;
+            flex-direction: column;
+        
+        }
+        
+        .left {
+            height: 200px;
+        }
+        
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .left {
+            background: url(https://media.istockphoto.com/id/626118682/photo/server-room-interior-in-datacenter.jpg?s=612x612&w=0&k=20&c=yizhs0AIJMiTPGrsTXEt_txFXCnXYIds77A79KZSgu0=);
+            background-size: cover;
+        }
+        
+        .left .copy {
+            color:white;
+            text-align: center;
+            -webkit-font-smoothing: antialiased;
+            -mox-osx-font-smoothing: grayscale;
+        }
+        
+        .left p {
+            font-weight: 400;
+        
+        }
+        .right .copy {
+            color: black;
+            text-align: center;
+        }
+        
+        .right .copy .p {
+            margin: 1.5em 0;
+            font-size: 0.875rem;
+        }
+        
+        .right form {
+            display: block;
+            width: 328px;
+            margin-left: 25%;
+        }
+        
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="number"],
+        form input[type="password"] {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            border: lpx solid #c4c4c4;
+            padding: lem;
+            margin-bottom: 1.25rem;
+            font-size: 0.875rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.75rem;
+        }
+        .input-container .password {
+            position: absolute;
+            top: 42px;
+            right: 16px;
+        }
+        
+        .checkbox-container input {
+        
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+        }
+        
+        .checkbox-container {
+            display: block;
+            position: relative;
+            padding-left: 2rem;
+            cursor:pointer;
+            user-select: none;
+            margin: 0 0 1.25rem 0;
+        }
+        
+        .checkbox-container input:checked~.checkmark{
+            background-color: var(--primary-blue);
+            border: lpx solid var(--primary-blue);
+        
+        }
+        
+        .checkmark {
+            position: absolute;
+            width: 24px;
+            height:24px;
+            background: white;
+            border: white;
+            border: lpx solid #c4c4c4;
+            border-radius: 2px;
+            top: -4px;
+            left: 0;
+        }
+        
+        .checkmark:after {
+            content:"";
+            position:absolute;
+            display: none;
+        }
+        
+        .checkbox-container .checkmark:after {
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            width:5px;
+            height: 10px;
+            left: 8px;
+            top: 4px;
+            transform: rotate(45deg);
+        }
+        
+        
+        .signup-btn {
+            display: block;
+            width: 100%;
+            background: var(--primary-blue);
+            color:white;
+            font-weight: 700;
+            padding: 1rem;
+            border:none;
+            border-radius: 2px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .signup-btn:hover {
+            background: #2c4893;
+            cursor: pointer;
+        }
+        
+        .admin-btn {
+            display: block;
+            margin-top: 5%;
+            width: 50%;
+            background: var(--primary-blue);
+            color:white;
+            font-weight: 700;
+            padding: 1rem;
+            border:none;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .admin-btn:hover {
+            background: #2c4893;
+            cursor: pointer;
+        }
+        @media screen and (min-width:900px) {
+            .split-screen {
+                flex-direction: row;
+                height: 100vh;
+                
+            }
+        .left,
+        .right {
+            display: flex;
+            width: 50%;
+            height: auto;
+        }   
+        }
+        @media screen and ( max-width:700px){
+            .text{
+                font-size: 2em;
+            }
+        }
+        @media screen and ( max-width:600px){
+            .text{
+                font-size: 1.5em;
+            }
+        }
+        @media screen and ( max-width:460px){
+            .text{
+                font-size: 1.3em;
+            }
+        }
+        @media screen and ( max-width:400px){
+            .text{
+                font-size: 1.1em;
+            }
+        }
+        @media screen and ( max-width:300px){
+            .text{
+                font-size: 1em;
+            }
+        }
+    </style> 
+ </head>  
+ <body>
+    <div class="split-screen">
+        <div class="left">
+            <section class="copy">
+                <h1 class= text>Explore the field of computer science!</h1>
+                <p></p>
+            </section>
+
+        </div>  
+        <div class="right">
+            <form>
+                <section class="copy">
+                    <h2>Sign Up</h2>
+                    <div class="login-container">
+                        <p> <i>Already have an account?</i><a href="Login2">
+                            <strong>Login</strong>
+                        </a></p>
+                    </div>
+                </section>
+                <div class="input-container name">
+                    <label for "fullname">Full Name</label>
+                    <input id="fullname" name="fullname" type="text">
+                </div>
+                <div class="input-container roll">
+                    <label for "roll">Roll Number</label>
+                    <input id="roll" name="roll" type="number">
+                </div>
+                <div class="input-container email">
+                    <label for "email">Email</label>
+                    <input id="email" name="email" type="email">
+                </div>
+                <div class="input-container password">
+                    <label for "password">Password</label>
+                    <input id="password" name="password" placeholder="at least 8 characters" type="password">
+                            
+                </div>
+                <div class="input-container cta">
+                    <label class="checkbox-container"><input type="checkbox"><span class="checkmark"></span>
+                        Confirm your entries
+                    </label>           
+                </div>    
+                <button class="signup-btn" type="submit">Sign Up</button>
+                
+            </form>
+        </div>
+    </div>
+
+ </body>  
+ {% endblock body %}
+</html>

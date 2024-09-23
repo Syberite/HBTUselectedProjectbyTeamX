@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block title %}faculty{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+        
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+       
+
+
+
+<div class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 mx-auto my-10">
+    <div class="flex items-center justify-between mb-4">
+        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Faculty Members</h5>
+        <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+            View all
+        </a>
+   </div>
+   <div class="flow-root">
+        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+            <li class="py-3 sm:py-4">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="https://i.ibb.co/Y3Wws5H/pngtree-company-employee-avatar-icon-wearing-a-suit-png-image-6133899.png" alt="Neil image">
+                    </div>
+                    <div class="flex-1 min-w-0 ms-4">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                            Dr. Anita Yadav 
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            Professor & Head
+                        </p>
+                    </div>
+                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                        PhD
+                    </div>
+                </div>
+            </li>
+            <li class="py-3 sm:py-4">
+                <div class="flex items-center ">
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="https://i.ibb.co/Y3Wws5H/pngtree-company-employee-avatar-icon-wearing-a-suit-png-image-6133899.png" alt="Bonnie image">
+                    </div>
+                    <div class="flex-1 min-w-0 ms-4">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                            Dr. Prabhat Verma
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            Professor
+                        </p>
+                    </div>
+                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                        PhD
+                    </div>
+                </div>
+            </li>
+            <li class="py-3 sm:py-4">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="https://i.ibb.co/Y3Wws5H/pngtree-company-employee-avatar-icon-wearing-a-suit-png-image-6133899.png" alt="Michael image">
+                    </div>
+                    <div class="flex-1 min-w-0 ms-4">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                            Dr. Vandana Dixit Kaushik
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            Professor
+                        </p>
+                    </div>
+                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                        PhD
+                    </div>
+                </div>
+            </li>
+            <li class="py-3 sm:py-4">
+                <div class="flex items-center ">
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="https://i.ibb.co/Y3Wws5H/pngtree-company-employee-avatar-icon-wearing-a-suit-png-image-6133899.png" alt="Lana image">
+                    </div>
+                    <div class="flex-1 min-w-0 ms-4">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                            Dr. Vivek Singh Verma
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            Associate Professor
+                        </p>
+                    </div>
+                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                        PhD
+                    </div>
+                </div>
+            </li>
+            {% comment %} <li class="pt-3 pb-0 sm:pt-4">
+                <div class="flex items-center ">
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Thomas image">
+                    </div>
+                    <div class="flex-1 min-w-0 ms-4">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                            
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            email@windster.com
+                        </p>
+                    </div>
+                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                        $2367
+                    </div>
+                </div>
+            </li> {% endcomment %}
+        </ul>
+        <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"><a href="http://127.0.0.1:8000/admin/login/?next=/admin/">Admin</a></button>
+   </div>
+</div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script> 
+    </body>
+</html>
+
+
+{% endblock body %}

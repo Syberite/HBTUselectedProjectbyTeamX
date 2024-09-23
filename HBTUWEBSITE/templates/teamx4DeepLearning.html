@@ -1,0 +1,288 @@
+{% extends "base.html" %}
+{% block  body %}
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Nucleonex</title>
+
+  <style>
+  *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans', sans-serif;
+  }
+  /*header*/
+  
+  header {
+    background-color: #070e16;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 60px;
+    margin-left:50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff0000;
+  }
+  
+  /*hero*/
+  
+  .hero {
+    background-image: url("hero-background1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+  
+  
+    text-align: left;
+    color: #233975;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    padding: 20px;
+    margin-top :50px;
+    margin-left: 4%;
+    
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e60000;
+  }
+  
+  /*about*/
+  
+  .about {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+  }
+  
+  .about-content {
+    flex: 1;
+    max-width: 600px;
+    padding-right: 50px;
+    color: #fff;
+    margin-left: 5%;
+    
+    
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .about-image {
+    max-width: 50%;
+    margin-right: 5%;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .dark-theme {
+    background-color: #070e16;
+  }
+  
+  
+  /* menu*/
+  .projects {
+    padding: 80px 0;
+    text-align: center;
+    {% comment %} background-color: #070e16; {% endcomment %}
+  }
+  
+  .projects h2 {
+    font-size: 36px;                                                                                                                                                                
+    margin-bottom: 40px;
+    color: #black;
+  }
+  
+  .courses-items {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .courses-item {
+    max-width: 300px;
+    margin: 0 20px;
+    text-align: left;
+  }
+  
+  .courses-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .courses-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+  }
+  
+  .courses-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .image-grid {
+    display: flex;
+  }
+  
+  /* Footer*/
+  
+  .footer {
+    background-color: #070e16;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+  }
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to Nucleonex</h1>
+    <p>Feel the future</p>
+  <a href="" class="btn">Explore more</a>
+  </div>
+</section>
+
+<section class="about dark-theme">
+  <div class="about-content">
+    <h2>Deep Learning</h2>     
+    <p>Deep Learning is an advanced subset of Artificial Intelligence (AI) that focuses on training deep neural networks with multiple layers to learn from data and make complex decisions. It mimics the way the human brain works by processing information through layers of interconnected nodes, enabling it to recognize patterns, understand speech, and perform other sophisticated tasks.</p>     
+    <p>The Deep Learning course delves into advanced techniques within the field of Artificial Intelligence, focusing specifically on neural networks with multiple layers (deep learning). Participants learn how to design, train, and deploy deep neural networks for tasks such as image recognition, natural language processing, and reinforcement learning. Through theoretical lectures and practical exercises, students gain a deep understanding of deep learning architectures, optimization algorithms, and state-of-the-art techniques. By the end of the course, students are equipped to tackle complex problems and contribute to cutting-edge AI research and applications.</p>
+    <a href="#menu" class="btn">Explore more</a>
+  </div>
+  <div class="about-image">
+    <img src="https://img.freepik.com/free-photo/ai-technology-brain-background-digital-transformation-concept_53876-125206.jpg?t=st=1712917485~exp=1712918085~hmac=4acc00e629d8cb6b88c6645c13cec0c2fbcd30fc22f5f60986e2c5ff46dc3768" alt="about-image">
+  </div>
+</section>
+
+
+<section class="projects">
+  <h2>Current projects</h2>
+  <div class="courses-items">
+    <div class="courses-item">
+      <img src="https://media.istockphoto.com/id/535193012/photo/problem-solving-concept-with-diagrams-charts-and-businessman-in-background.jpg?s=612x612&w=0&k=20&c=zk_5_FmJ7SwCWZFFtl7PIpwkFBoxQH07pVmQraswxM4=" alt="Project 1">
+      <h3></h3>
+      <p></p>
+    </div>
+    <div class="courses-item">
+      <img src="https://media.istockphoto.com/id/1367967285/photo/automation-software-technology-process-system-business-concept.jpg?s=612x612&w=0&k=20&c=VnRZHYgIfInFhaShiStMroW7PnVyvAC4C9SodjBf4ns=" alt="Project 2">
+      <h3></h3>
+      <p></p>
+    </div>
+    <div class="courses-item">
+      <img src="https://media.istockphoto.com/id/1156059931/vector/neural-network-model-with-thin-synapses-between-neurons.jpg?s=612x612&w=0&k=20&c=t59mpmCoMr3i6gNDXNZisc6XkobvghNIZjxKjSd2wnA=" alt="Project 3">
+      <h3></h3>
+      <p></p>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="https://i.ibb.co/Thfqbhn/IMG-20240412-WA0005.jpg" alt="Logo">
+    </div>
+    
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <p class="footer-text">&copy; copyright@Nucleonex</p>
+</footer>
+{% endblock body %}
+
+</body>
